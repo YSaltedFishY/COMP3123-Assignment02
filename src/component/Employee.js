@@ -13,7 +13,7 @@ export default class Employee extends Component {
     }
 
     getEmployees = async () => {
-        const empUrl = "api/v1/emp/employees"
+        const empUrl = "https://comp3123-assignment01.vercel.appapi/v1/emp/employees"
         try {
             const response = await axios.get(empUrl)
             console.log("LOAD DATA HERE")
