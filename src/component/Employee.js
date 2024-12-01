@@ -16,6 +16,7 @@ export default class Employee extends Component {
         const empUrl = "api/v1/emp/employees"
         try {
             const response = await axios.get(empUrl)
+            console.log("LOAD DATA HERE")
             console.log(response.data)
 
             this.setState({ employees: response.data })
