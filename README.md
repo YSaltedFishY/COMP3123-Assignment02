@@ -1,3 +1,17 @@
+# Employee Management App
+This assignment is created using REACT.JS as front end deploy on vercel. Connected to the backend which was also deployed on Vercel. The login crediential to test is username: test password: test
+
+# How to use
+Users will first see a login screen in which they can choose to either register or login with an exisiting account. Users can not access any employee management links until login
+
+Once login the top-bar options will change to Employee button and a welcome user message plus a log out button.
+
+User will then see a list of Employee in which they may add new employee, edit, update, delete or view details of an employee
+
+The list menu also have a search bar to search employees base on their department(non case sensitve search) Reset button to show all the employees again
+
+The title on the top left of the screen will bring the user back to the home page which is the employee list when login; Or Login page if not login.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
