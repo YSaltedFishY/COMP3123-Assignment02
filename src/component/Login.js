@@ -6,6 +6,7 @@ import './css/EmployeeDetails.css'
 
 export default function Login({onLogin}) {
     const navigate = useNavigate()
+    const API_URL = process.env.REACT_APP_API_URL
     const [user, setUser] = useState({
         "username": "",
         "password": "",
@@ -18,7 +19,7 @@ export default function Login({onLogin}) {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const userUrl = `/api/v1/user/login`
+        const userUrl = `${API_URL}/api/v1/user/login`
 
         try {
             const response = await api.post(userUrl, user)
