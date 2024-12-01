@@ -1,10 +1,10 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import axios from 'axios'
+import api from './api'
 import {useState } from 'react'
 import './css/EmployeeDetails.css'
 
-export default function Login() {
+export default function Login({onLogin}) {
     const navigate = useNavigate()
     const [user, setUser] = useState({
         "username": "",
@@ -18,15 +18,20 @@ export default function Login() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const userUrl = `/api/v1/user/signup`
+        const userUrl = `/api/v1/user/login`
 
         try {
-            await axios.post(userUrl, user)
-            alert('You have registered successfully!');
+            const response = await api.post(userUrl, user)
+
+            localStorage.setItem('token', response.data.token)
+
+            onLogin(user.username)
+
+            alert('Login success!');
             navigate(`/employee`)
         } catch (error) {
             console.log(error)
-            alert(`Registered failed! please try again later`)
+            alert(`Login failed! please try again later`)
         }
     }
 
@@ -61,7 +66,7 @@ export default function Login() {
                     </label>
 
                     <div className='btn-update'>
-                        <button type="submit" className='confirm-update' >Register</button>
+                        <button type="submit" className='confirm-update' >Login</button>
                         <button type="button" className='register' onClick={cancel}>Register</button>
                     </div>
                 </form>

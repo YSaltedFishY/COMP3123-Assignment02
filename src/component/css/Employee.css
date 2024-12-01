@@ -94,3 +94,40 @@ h1 {
 .action-button.delete:hover {
     background-color: #bd2130;
 }
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 350px;
+    height: 30px;
+}
+
+.search-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reset {
+    background-color: #95cf0e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset:hover {
+    background-color: #658b0a;
+}

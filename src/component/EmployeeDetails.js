@@ -48,6 +48,8 @@ export default function EmployeeDetails() {
           <p><strong>Salary:</strong> ${emp.salary}</p>
           <p><strong>Department:</strong> {emp.department}</p>
           <p><strong>Date of Joining:</strong> {new Date(emp.date_of_joining).toLocaleDateString()}</p>
+          <p><strong>Created at:</strong> {new Date(emp.created_at).toLocaleDateString()}</p>
+          <p><strong>Updated at:</strong> {new Date(emp.updated_at).toLocaleDateString()}</p>
         </div>
       ) : (
         //In case employee information is not yet loaded

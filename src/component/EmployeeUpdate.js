@@ -15,7 +15,8 @@ export default function EmployeeUpdate() {
         "email": "",
         "position": "",
         "salary": '',
-        "department": ""
+        "department": "",
+        "updated_at": ""
     })
 
 
@@ -49,8 +50,12 @@ export default function EmployeeUpdate() {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const empUpdateUrl = `/api/v1/emp/employees/${empId}`
+
+        const currentDate = new Date().toISOString();
+        const empUpdateData = {...employee, updated_at: currentDate}
+
         try {
-            await axios.put(empUpdateUrl, employee)
+            await axios.put(empUpdateUrl, empUpdateData)
             alert('Employee updated successfully!');
             navigate(`/employees/${emp._id}`)
         } catch (error) {
