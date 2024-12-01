@@ -1,0 +1,154 @@
+.container {
+    width: 50%;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.h2-delete {
+    margin-bottom: 20px;
+    color: rgb(223, 28, 28);
+}
+
+.error-msg {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+.card, .update-form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    line-height: 1.8;
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.card strong {
+    color: #333;
+}
+
+.card-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: underline;
+
+}
+
+.btn-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+
+.confirm {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm:hover {
+    background-color: #96222e;
+}
+
+
+.cancel {
+    background-color: #3583dc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancel:hover {
+    background-color: #265e9e;
+}
+
+.update-form label {
+    display: block;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: start;
+}
+
+.update-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-update {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.confirm-update {
+    background-color: #35dcc6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-update:hover {
+    background-color: #249182;
+}
+
+
+.cancel-update {
+    background-color: #dc354b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-update:hover {
+    background-color: #b32e3f;
+}
+
+.register {
+    background-color: #494747;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register:hover {
+    background-color: #1b1a1a;
+}
