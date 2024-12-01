@@ -18,7 +18,7 @@ export default function Login({onLogin}) {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const userUrl = `https://comp3123-assignment01.vercel.app/api/v1/user/login`
+        const userUrl = `/api/v1/user/login`
 
         try {
             const response = await api.post(userUrl, user)
