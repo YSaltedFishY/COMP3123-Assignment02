@@ -32,7 +32,7 @@ export default class Employee extends Component {
     }
 
     handleSearch = async () => {
-        const empUrl = `api/v1/emp/employees/search?department=${this.state.searchDepart}`
+        const empUrl = `https://comp3123-assignment01.vercel.app/api/v1/emp/employees/search?department=${this.state.searchDepart}`
         console.log(empUrl)
         try {
             const response = await axios.get(empUrl)

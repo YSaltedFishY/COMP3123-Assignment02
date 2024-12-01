@@ -90,11 +90,11 @@ export default function App() {
               <Route path='/employees/create' element={<EmployeeCreate />} />
             </>) : (
             <>
-              <Route path='/employee' element={<Login />} />
-              <Route path='/employees/:empId' element={<Login />} />
-              <Route path='/employees/update/:empId' element={<Login />} />
-              <Route path='/employees/delete/:empId' element={<Login />} />
-              <Route path='/employees/create' element={<Login />} />
+              <Route path='/employee' element={<Navigate to="/login" replace />} />
+              <Route path='/employees/:empId' element={<Navigate to="/login" replace />} />
+              <Route path='/employees/update/:empId' element={<Navigate to="/login" replace />} />
+              <Route path='/employees/delete/:empId' element={<Navigate to="/login" replace />} />
+              <Route path='/employees/create' element={<Navigate to="/login" replace />} />
             </>
           )}
 

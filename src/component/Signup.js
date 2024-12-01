@@ -24,7 +24,7 @@ export default function Signup() {
         try {
             await axios.post(userUrl, user)
             alert('You have registered successfully!');
-            navigate(`/employee`)
+            navigate(`/login`)
         } catch (error) {
             console.log(error)
             alert(`Registered failed! please try again later`)
@@ -32,7 +32,7 @@ export default function Signup() {
     }
 
     const cancel = () => {
-        navigate('/Login')
+        navigate('/login')
 
     }
 

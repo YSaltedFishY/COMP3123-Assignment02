@@ -10,7 +10,7 @@ export default function EmployeeDetails() {
   var [emp, setEmp] = useState([])
 
   const getEmpDetail = async () => {
-    const empUrl = `/api/v1/emp/employees/${empId}`
+    const empUrl = `https://comp3123-assignment01.vercel.app/api/v1/emp/employees/${empId}`
 
     try {
       const response = await axios.get(empUrl)

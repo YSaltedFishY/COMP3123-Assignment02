@@ -11,7 +11,7 @@ export default function EmployeeDelete() {
     var [emp, setEmp] = useState([])
 
     const getEmpDetail = async () => {
-        const empUrl = `/api/v1/emp/employees/${empId}`
+        const empUrl = `https://comp3123-assignment01.vercel.app/api/v1/emp/employees/${empId}`
 
         try {
             const response = await axios.get(empUrl)
@@ -26,7 +26,7 @@ export default function EmployeeDelete() {
 
 
     const deleteEmployee = async () => {
-        const deleteUrl = `/api/v1/emp/employees?eid=${empId}`;
+        const deleteUrl = `https://comp3123-assignment01.vercel.app/api/v1/emp/employees?eid=${empId}`;
         try{
             await axios.delete(deleteUrl)
             alert('Employee has been deleted!')

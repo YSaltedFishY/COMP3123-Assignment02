@@ -21,7 +21,7 @@ export default function EmployeeUpdate() {
 
 
     const getEmpDetail = async () => {
-        const empUrl = `/api/v1/emp/employees/${empId}`
+        const empUrl = `https://comp3123-assignment01.vercel.app/api/v1/emp/employees/${empId}`
 
         try {
             const response = await axios.get(empUrl)
@@ -49,7 +49,7 @@ export default function EmployeeUpdate() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const empUpdateUrl = `/api/v1/emp/employees/${empId}`
+        const empUpdateUrl = `https://comp3123-assignment01.vercel.app/api/v1/emp/employees/${empId}`
 
         const currentDate = new Date().toISOString();
         const empUpdateData = {...employee, updated_at: currentDate}

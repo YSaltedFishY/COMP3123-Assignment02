@@ -24,7 +24,7 @@ export default function EmployeeCreate() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const empUrl = `/api/v1/emp/employees`
+        const empUrl = `https://comp3123-assignment01.vercel.app/api/v1/emp/employees`
 
         const currentDate = new Date().toISOString();
         const empCreateData = {...employee, date_of_joining: currentDate}
