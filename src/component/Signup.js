@@ -6,7 +6,6 @@ import './css/EmployeeDetails.css'
 
 export default function Signup() {
     const navigate = useNavigate()
-    const API_URL = process.env.REACT_APP_API_URL
     const [user, setUser] = useState({
         "username": "",
         "password": "",
@@ -20,7 +19,7 @@ export default function Signup() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const userUrl = `${API_URL}/api/v1/user/signup`
+        const userUrl = `https://comp3123-assignment01.vercel.app/api/v1/user/signup`
 
         try {
             await axios.post(userUrl, user)
