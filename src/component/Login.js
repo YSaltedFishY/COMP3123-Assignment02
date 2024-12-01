@@ -31,7 +31,7 @@ export default function Login({onLogin}) {
             navigate(`/employee`)
         } catch (error) {
             console.log(error)
-            alert(`Login failed! please try again later ${error.response.data.message}`)
+            alert(`Login failed! please try again later`)
         }
     }
 
