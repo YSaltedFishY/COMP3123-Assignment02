@@ -2,13 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import { Routes, Route, BrowserRouter, NavLink, Link, Navigate, useNavigate } from 'react-router-dom'
 import React, { useEffect, useState } from 'react';
-import Employee from './component/Employee';
-import Signup from './component/Signup';
-import Login from './component/Login';
-import EmployeeDetails from './component/EmployeeDetails';
-import EmployeeDelete from './component/EmployeeDelete';
-import EmployeeUpdate from './component/EmployeeUpdate';
-import EmployeeCreate from './component/EmployeeCreate';
+import Employee from './component/Employee.js';
+import Signup from './component/Signup.js';
+import Login from './component/Login.js';
+import EmployeeDetails from './component/EmployeeDetails.js';
+import EmployeeDelete from './component/EmployeeDelete.js';
+import EmployeeUpdate from './component/EmployeeUpdate.js';
+import EmployeeCreate from './component/EmployeeCreate.js';
 
 export default function App() {
   const [user, setUser] = useState(null)
