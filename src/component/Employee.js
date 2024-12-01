@@ -72,6 +72,7 @@ export default class Employee extends Component {
                 <table className="employee-table">
                     <thead>
                         <tr>
+                            <th>Department</th>
                             <th>Employee First Name</th>
                             <th>Employee Last Name</th>
                             <th>Employee ID</th>
@@ -82,6 +83,7 @@ export default class Employee extends Component {
                     <tbody>
                         {this.state.employees.map((employee) => (
                             <tr key={employee._id}>
+                                <td>{employee.department}</td>
                                 <td>{employee.firstname}</td>
                                 <td>{employee.lastname}</td>
                                 <td>{employee._id}</td>
