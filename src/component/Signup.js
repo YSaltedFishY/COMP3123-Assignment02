@@ -19,7 +19,7 @@ export default function Signup() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const userUrl = `/api/v1/user/signup`
+        const userUrl = `https://comp3123-assignment01.vercel.app/api/v1/user/signup`
 
         try {
             await axios.post(userUrl, user)
