@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: process.env.REACT_APP_API_URL || 'http://localhost:3000',
+    baseURL: "https://comp-3123-assignment02.vercel.app" || 'http://localhost:3000',
     headers: {
         'Content-Type': 'application/json',
     },
