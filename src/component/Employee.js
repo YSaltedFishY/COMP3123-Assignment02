@@ -43,7 +43,6 @@ export default class Employee extends Component {
         }
     }
 
-
     componentDidMount() {
         this.getEmployees()
     }

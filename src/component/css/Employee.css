@@ -131,3 +131,7 @@ h1 {
 .reset:hover {
     background-color: #658b0a;
 }
+
+td {
+    text-transform: capitalize;
+}

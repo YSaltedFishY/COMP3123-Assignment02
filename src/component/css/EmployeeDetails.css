@@ -33,6 +33,7 @@ h2 {
 .card p {
     margin: 10px 0;
     font-size: 16px;
+    text-transform: capitalize;
 }
 
 .card strong {
