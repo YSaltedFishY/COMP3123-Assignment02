@@ -1,6 +1,9 @@
 # Employee Management App
 This assignment is created using REACT.JS as front end deploy on vercel. Connected to the backend which was also deployed on Vercel. The login crediential to test is username: test password: test
 
+# Backend link
+https://github.com/YSaltedFishY/COMP3123-Assignment01
+
 # How to use
 Users will first see a login screen in which they can choose to either register or login with an exisiting account. Users can not access any employee management links until login
 
